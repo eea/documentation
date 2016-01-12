@@ -344,7 +344,7 @@ Principle
 
 To reduce the amount of resources loaded in each page, Plone standard bundles are aggregated together.
 
-A first aggregation named `default` contains all the bundles that must be available everytime. It corresponds to 2 outputs (one JS and one JS). A second aggregation named `logged-in` containes the bundles only needed for authenticated users. It also corresponds to 2 outputs (JS and CSS).
+A first aggregation named `default` contains all the bundles that must be available everytime. It corresponds to 2 outputs (one JS and one CSS). A second aggregation named `logged-in` contains the bundles only needed for authenticated users. It also corresponds to 2 outputs (JS and CSS).
 
 The aggregation is triggered by a GenericSetup step depending on the `registry.xml` file.
 Any profile containing the `registry.xml` file will automatically refresh the current aggregations with the declared bundles.
